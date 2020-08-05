@@ -2,6 +2,7 @@
 
 const express = require('express');
 const socketIO = require('socket.io');
+const request = require('request');
 
 const PORT = process.env.PORT || 3000;
 const INDEX = '/index.html';
@@ -106,6 +107,7 @@ function doesOrderContainTable(orderData) {
     if(tableCheck == null) {tableOrder = false}
 return tableOrder;
 }
+
 
 
 function postDB(orderNum, products) {
