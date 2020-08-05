@@ -17,7 +17,7 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('Client disconnected'));
 });
 
-setInterval(() => io.emit('time', JSON.stringify(auth), 1000);
+setInterval(() => io.emit('time', 'test', 1000);
 
 
 
